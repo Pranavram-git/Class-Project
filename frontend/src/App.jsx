@@ -1,20 +1,29 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./pages/login";
-import Project from "./pages/project";
 import Task from "./pages/task";
+import Project from "./pages/project";
+import Calender from "./pages/calender";
+import Clients from "./pages/clients";
+import Dashboard from "./pages/dashboard";
+import Settings from "./pages/settings";
+import Team from "./pages/team";
 
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-    
-        <Route path="/login" element={<Login />} />
-        <Route path="/projects" element={<Project />} /> 
-        <Route path="/task" element={<Task />} /> 
-      </Routes>
-    </BrowserRouter>
-  );
+        <BrowserRouter>
+        <Routes>
+         <Route path="/login" element = {<Login />} />
+         <Route path="/task" element = {<Task />} />
+         <Route path="/project" element= {<Project />} />
+         <Route path="/calender" element= {<Calender />} />
+         <Route path="/clients" element= {<Clients />} />
+         <Route path="/dashboard" element= {<Dashboard />} />
+         <Route path="/settings" element= {<Settings />} />
+         <Route path="/team" element= {<Team/>} />
+        </Routes>
+        </BrowserRouter>
+        );
 }
 
 export default App;
