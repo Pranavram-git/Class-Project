@@ -8,7 +8,7 @@ function Dashboard() {
     setUserdata(location.state);
     console.log(userdata)
   }
-  return (
+  return (  
     <>
     <button onClick={displaydata}> button </button>
     </>

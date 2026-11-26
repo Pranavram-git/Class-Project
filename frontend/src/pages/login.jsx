@@ -11,7 +11,7 @@ function Login() {
     function handlesubmit(e){
       e.preventDefault();
       console.log(formdata)
-      alert("Login Successful!"); 
+      alert("Login Successful "); 
       navigate("/dashboard",{
         state: formdata,
       });
