@@ -12,7 +12,7 @@ function Login() {
       e.preventDefault();
       const registerdata = location.state;
       console.log("login page",logindata)
-   if( logindata.username === registerdata.name && logindata.password === registerdata.password ){
+   if( logindata.username === registerdata.name &&  logindata.password === registerdata.password ){
       console.log("login success unaku kannu teriuthu")
       navigate("/dashboard",{
         state: logindata,
